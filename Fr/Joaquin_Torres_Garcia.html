@@ -42,6 +42,43 @@
         <p>Joaquín Torres-García est né à Montevideo en Uruguay le 28 juillet 1874. Il était le premier enfant de Joaquim Torras Fradera (fils de Joan Torras et Rosa Fradera), un émigrant de Mataró, Espagne, et María García Pérez (fille de José María García, des îles Canaries, et Misia Rufina Pérez, Uruguay). En 1861, le père de Torres-García part en Amérique du Sud dans l'espoir d'y faire fortune et ouvre un magasin général appelé l'Almacen de Joaquín Torres. Enfant, Torres « a examiné la boutique pittoresque situé dans la vieille place du Les wagons, le point de la matière première du pays d'arrivée à l'exportation vers l'Europe. Le Montevideo colonial avait un port, les trains, et une population dynamique parsemée d'innombrables gauchos enveloppés dans des capes fouet prêt à la main. » « Une grande partie de son éducation dans cette société majoritairement agricole provenait de son observation des choses autour de lui... il reçoit sa première formation artistique formelle quand sa famille retourne en Espagne. »</p>
         <p>En 1891, le père de Torres-García retourne à Mataró avec sa femme et ses trois enfants. La famille s'installe à Barcelone. Torres-García est inscrit à l'École des Beaux-Arts de Barcelone, à l'Académie Baixas (Academia Baixas) et au cercle d'artistes Saint Lluc.</p>
         <h2>Gallerie de l’artiste</h2>
+        <div class="carrousel" x-data="{ hrefCourant: '#ecran-1',}">
+
+            <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="hrefCourant = '#'+
+            [...$refs.parent.children] .find(e=>e.getBoundingClientRect().x>=0).id ">
+            <link rel='stylesheet' href='/src/css/components/carrousel.css'>
+             
+                <div id="ecran-1" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Article_J_T_G/JTG_img1.webp" alt="image JTG1">
+                    </figure>
+                </div>
+                <div id="ecran-2" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Article_J_T_G/JTG_img2.webp" alt="image JTG2">
+                    </figure>
+                </div>
+                <div id="ecran-3" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Article_J_T_G/JTG_img3.webp" alt="image JTG3">
+                    </figure>
+                </div>
+                <div id="ecran-4" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Article_J_T_G/JTG_img4.webp" alt="image JTG4">
+                    </figure>
+                </div>
+                <div id="ecran-5" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Article_J_T_G/JTG_img5.webp" alt="image JTG5">
+                    </figure>
+                </div>
+                <div id="ecran-6" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Article_J_T_G/JTG_img6.webp" alt="image JTG6">
+                    </figure>
+                </div>
+            </div>
         <h2>Zoom sur deux de ses oeuvres</h2>
         <img src="/public/img/Article_J_T_G/JTG_oeuvres1.webp">
         <p>Costruzione Geometrica - 1929</p>

@@ -41,6 +41,48 @@
         <p>Posada commence sa carrière de caricaturiste à l'âge de dix-neuf ans en 1871 en imprimant et éditant dans le même atelier une brochure de quelques pages qu'il nomma El Jicote, qui est l'inversion malicieuse de El Quijote. </p>
         <p>C'est avec humour et beaucoup de finesse que Posada choisit ce titre pour sa publication car le jicote (Melipona Beechi) est dans l'imaginaire mexicain et dans les chansons populaires ressenti et représenté comme étant mâle, actif et travailleur, ce qui convenait parfaitement pour ce pamphlet qui s'adressait principalement à des ouvriers lors de la campagne qu'il mena la même année contre l'ex gouverneur Jésus Gómez Portugal, c'est pour cela que l'on ne doit pas traduire jicote par bourdon comme on le fait en français, qui lui est lui ressenti comme un insecte asexué et plutôt fainéant, tel qu'était représenté Gómez Portugal.</p>
         <h2>Gallerie de l’artiste</h2>
+        <div class="carrousel" x-data="{ hrefCourant: '#ecran-1',}">
+
+            <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="hrefCourant = '#'+
+            [...$refs.parent.children] .find(e=>e.getBoundingClientRect().x>=0).id ">
+            <link rel='stylesheet' href='/src/css/components/carrousel.css'>
+             
+                <div id="ecran-1" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Article_J_G_P/JGP_img1.webp" alt="image JGP1">
+                    </figure>
+                </div>
+                <div id="ecran-2" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Article_J_G_P/JGP_img2.webp" alt="image JGP2">
+                    </figure>
+                </div>
+                <div id="ecran-3" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Article_J_G_P/JGP_img3.webp" alt="image JGP3">
+                    </figure>
+                </div>
+                <div id="ecran-4" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Article_J_G_P/JGP_img4.webp" alt="image JGP4">
+                    </figure>
+                </div>
+                <div id="ecran-5" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Article_J_G_P/JGP_img5.webp" alt="image JGP5">
+                    </figure>
+                </div>
+                <div id="ecran-6" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Article_J_G_P/JGP_img6.webp" alt="image JGP6">
+                    </figure>
+                </div>
+                <div id="ecran-7" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Article_J_G_P/JGP_img7.webp" alt="image JGP7">
+                    </figure>
+                </div>
+            </div>
         <h2>Zoom sur deux de ses oeuvres</h2>
         <img src="/public/img/Article_J_G_P/JGP_oeuvres1.webp">
         <p>Calavera from Oaxaca - 1910</p>

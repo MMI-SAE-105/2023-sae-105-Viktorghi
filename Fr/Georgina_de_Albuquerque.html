@@ -43,6 +43,48 @@
         <p>Les peintures de Georgina de Albuquerque apportent, comme paramètre, les techniques picturales de l'impressionnisme et de ses dérivés, ce qui se manifeste dans le choix des palettes de couleurs, qui sont explorées à travers les incidences lumineuses et la vibration chromatique du tableau. Les œuvres de la peintre de São Paulo installée dans la capitale de Rio de Janeiro sont également reconnues pour leur traitement de la couleur et leur maîtrise du dessin de la figure humaine. Il y a aussi, dans les œuvres de Georgina, la prévalence des couleurs claires, résultant des recherches de l'artiste sur les effets du soleil sur les corps humains, comme le souligne Angyone Costa.</p>
         <h2>Gallerie de l’artiste</h2>
         <h2>Zoom sur deux de ses oeuvres</h2>
+        <div class="carrousel" x-data="{ hrefCourant: '#ecran-1',}">
+
+            <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="hrefCourant = '#'+
+            [...$refs.parent.children] .find(e=>e.getBoundingClientRect().x>=0).id ">
+            <link rel='stylesheet' href='/src/css/components/carrousel.css'>
+             
+                <div id="ecran-1" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Article_G_A/GdA_img1.webp" alt="image GdA1">
+                    </figure>
+                </div>
+                <div id="ecran-2" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Article_G_A/GdA_img2.webp" alt="image GdA2">
+                    </figure>
+                </div>
+                <div id="ecran-3" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Article_G_A/GdA_img3.webp" alt="image GdA3">
+                    </figure>
+                </div>
+                <div id="ecran-4" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Article_G_A/GdA_img4.webp" alt="image GdA4">
+                    </figure>
+                </div>
+                <div id="ecran-5" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Article_G_A/GdA_img5.webp" alt="image GdA5">
+                    </figure>
+                </div>
+                <div id="ecran-6" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Article_G_A/GdA_img6.webp" alt="image GdA6">
+                    </figure>
+                </div>
+                <div id="ecran-7" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Article_G_A/GdA_img7.webp" alt="image GdA7">
+                    </figure>
+                </div>
+            </div>
         <img src="/public/img/Article_G_A/GdA_oeuvres1.webp">
         <p>Canto Do Rio - 1926</p>
         <a href="/Fr/Canto_Do_Rio.html"> en savoir plus</a>
