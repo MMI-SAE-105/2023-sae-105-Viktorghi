@@ -35,6 +35,73 @@
            </header>
         <h1>Expostion sur le modernismo</h1>
         <h2>Le modernismo</h2>
+        <div class="carrousel" x-data="{ hrefCourant: '#ecran-1',}">
+
+            <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="hrefCourant = '#'+
+            [...$refs.parent.children] .find(e=>e.getBoundingClientRect().x>=0).id ">
+            <link rel='stylesheet' href='/src/css/components/carrousel.css'>
+             
+                <div id="ecran-1" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Home_M/img_home1.webp" alt="image home 1">
+                    </figure>
+                </div>
+                <div id="ecran-2" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Home_M/img_home2.webp" alt="image home 2">
+                    </figure>
+                </div>
+                <div id="ecran-3" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Home_M/img_home3.webp" alt="image home 3">
+                    </figure>
+                </div>
+                <div id="ecran-4" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Home_M/img_home4.webp" alt="image home 4">
+                    </figure>
+                </div>
+                <div id="ecran-5" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Home_M/img_home5.webp" alt="image home 5">
+                    </figure>
+                </div>
+                <div id="ecran-6" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Home_M/img_home6.webp" alt="image home 6">
+                    </figure>
+                </div>
+                <div id="ecran-7" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Home_M/img_home7.webp" alt="image home 7">
+                    </figure>
+                </div>
+                <div id="ecran-8" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Home_M/img_home8.webp" alt="image home 8">
+                    </figure>
+                </div>
+                <div id="ecran-9" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Home_M/img_home9.webp" alt="image home 9">
+                    </figure>
+                </div>
+                <div id="ecran-10" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Home_M/img_home10.webp" alt="image home 10">
+                    </figure>
+                </div>
+                <div id="ecran-11" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Home_M/img_home11.webp" alt="image home 11">
+                    </figure>
+                </div>
+                <div id="ecran-12" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Home_M/img_home12.webp" alt="image home 12">
+                    </figure>
+                </div>   
+            </div>
         <p>Le Modernismo est l’art nouveau espagnol. Il convient de remarquer qu'en espagnol le mot sert à désigner la totalité du mouvement de l'Art nouveau.</p>
         <p>Le modernismo se développa essentiellement au long d'une cinquantaine d'années, entre 1880 et 1930. C'est une tendance européenne, qui prend en Catalogne une personnalité différenciée...</p>
         <a href="/Fr/modernismo.html"> en savoir plus</a>

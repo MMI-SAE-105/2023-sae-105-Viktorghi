@@ -1,0 +1,60 @@
+.carrousel_parent-ecrans {
+    /* aligne horizontalement les enfants */
+    display: flex;
+    /* largeur du parent */
+    width: 100%;
+    overflow-x: scroll;
+   /* permet de scroller horizontalement */
+   scroll-behavior: smooth; /* animation de défilement */
+   scroll-snap-type: x mandatory;
+
+  }
+
+.carrousel_ecran {
+ /* largeur du parent pour chaque enfant */
+ /* permet de garder toute la largeur du parent */
+width: 100%;
+flex: none;
+ scroll-snap-align: start; /* aligne les enfants par blocs */
+
+
+}
+.carrousel_ecran figure {
+ /* enlève les marges par défaut */
+ margin:0;
+}
+ 
+ .carrousel_btn {
+   position: absolute;
+   top: 50%; /* centre verticalement */
+   transform: translateY(-50%); /* methode du point mort */
+   width: 2rem;
+   height: 2rem;
+   background: rgba(0,0,0,0.5);
+   border-radius: 50%;
+   border: none;
+   display: grid;
+   place-content: center;
+   color: #fff;
+ }
+ 
+
+ .caroussel__links--dots {
+   display: flex;/* aligne horizontalement les enfants */
+   padding: 0; /* enlève les padding par défaut */
+   list-style: none; /* enlève les puces par défaut */
+   justify-content: center; /* espace entre les enfants */
+   margin-inline: auto;
+ }
+ .carrousel__link--dot{
+   height: 15px;
+   width: 15px;
+   background-color: rgba(196, 34, 34, 0.5) ;
+   border-radius: 50%;
+   display: inline-block;
+   margin: 2px;
+ }
+ .carrousel__link--dot.dotactif{
+   background-color: rgba(196, 34, 34, 0.5);
+
+ }
