@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Carme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Trirong&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+@import "vendors/normalize.css";
+
+@import "utils/variables.css";
+
+/* Base */
+@import "base/main.css";
+@import "base/media.css";
+
+
+@import"layout/header.css";
+@import"layout/footer.css";
+
+/* Composant */
+@import "components/menu.css";
+@import "components/carrousel.css";
+@import "components/frise.css";

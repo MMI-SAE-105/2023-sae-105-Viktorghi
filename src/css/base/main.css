@@ -1,0 +1,48 @@
+body{
+    color: var(--noir);
+    background-color: var(--blanc);
+    background-attachment: fixed;
+    background-repeat: no-repeat;  
+}
+
+h1{
+    font-family: 'Overpass';
+    color: var(--noir);
+    font-size: 24px;
+}
+
+h2{
+    font-family: 'Overpass';
+    font-size: 20px;
+    color: var(--jaune-pâle);
+}
+
+h3{
+    font-family: 'Carme';
+    font-size: 12px;
+    color: var(--noir);
+}
+
+h4{
+    font-family: 'Trirong';
+    font-size: 24px;
+    color: var(---jaune-pâle);
+}
+
+p {
+    font-family: 'Carme';
+    font-size: 14px;
+}
+
+button {
+    appearance: none;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+  }
+
+.tothetop{
+    margin-left: 84%;
+    padding: 2px;
+}

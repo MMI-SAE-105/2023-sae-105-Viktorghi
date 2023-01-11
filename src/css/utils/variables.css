@@ -1,0 +1,15 @@
+:root{
+    
+    /* Color styles */
+--jaune-pâle: rgba(253, 245, 203, 1);
+--blanc: rgba(255, 255, 255, 1);
+--vert-foncé: rgba(101, 120, 68, 1);
+--noir: rgba(0, 0, 0, 1);
+--orange: rgba(242, 134, 52, 1);
+    
+font-family: 'Trirong';
+font-family: 'Overpass';
+font-family: 'Overpass';
+font-family: 'Carme';
+
+    }
