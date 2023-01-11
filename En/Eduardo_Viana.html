@@ -5,7 +5,7 @@
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <title>el modernismo</title>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <link rel='stylesheet' type='text/css' media='screen' href='/src/css/main.css'>
+        <link rel='stylesheet' type='text/css' media='screen' href='/src/css/style.css'>
         <script defer src="https://unpkg.com/alpinejs"></script>
         <link rel="icon" href="public/img/Icones/Logo.svg">
     </head>
@@ -14,27 +14,27 @@
             <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="menuBouton">
                 <img src="/public/img/Icones/Menu.svg" alt="Icone menu">
             </button>
-            <a href="/En/index.html"> <img src="/public/img/Icones/Langues.svg" alt="globe" class="header__nav--language"> </a>
-            <a href="index.html"> <img src="/public/img/Icones/Logo.svg" alt= "logo exposition" > </a>
+            <a href="/Fr/Eduardo_Viana.html"> <img src="/public/img/Icones/Langues.svg" alt="globe" class="header__nav--language"> </a>
+            <a href="/En/index.html"> <img src="/public/img/Icones/Logo.svg" alt= "logo exposition" > </a>
             <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.600ms class="menu">
                 <ul>
-                    <a href="#"> <img src="/public/img/Icones/Croix.svg" alt="Logo du site"> </a>
-                    <li><a href="index.html">Expostion sur le modernismo</a></li>
-                    <li><a href="modernismo.html">Le modernismo</a></li>
+                    <a href="/En/Eduardo_Viana.html"> <img src="/public/img/Icones/Croix.svg" alt="Croix"> </a>
+                    <li><a href="/En/index.html">Expostion sur le modernismo</a></li>
+                    <li><a href="/En/modernismo.html">Le modernismo</a></li>
                     <p>Artistes</p>
-                    <li><a href="Eduardo_Viana.html">Eduardo Viana</a></li>
-                    <li><a href="Georgina_de_Albuquerque.html">Georgina de Albuquerque</a></li>
-                    <li><a href="Joaquin_Torres_Garcia.html">Joaquín Torres García</a></li>
-                    <li><a href="Jose_Guadalupe_Posada.html">José Guadalupe Posada</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
-                    <li><a href="Tarifs_&_billetterie.html">Tarifs & billetterie</a></li>
-                    <a href="#"> <img src="/public/img/Icones/Langues_menu.svg" alt="Logo du site"> </a>
+                    <li><a href="/En/Eduardo_Viana.html">Eduardo Viana</a></li>
+                    <li><a href="/En/Georgina_de_Albuquerque.html">Georgina de Albuquerque</a></li>
+                    <li><a href="/En/Joaquin_Torres_Garcia.html">Joaquín Torres García</a></li>
+                    <li><a href="/En/Jose_Guadalupe_Posada.html">José Guadalupe Posada</a></li>
+                    <li><a href="/En/Contact.html">Contact</a></li>
+                    <li><a href="/En/Tarifs_&_billetterie.html">Tarifs & billetterie</a></li>
+                    <a href="/Fr/Eduardo_Viana.html"> <img src="/public/img/Icones/Langues.svg" alt="Langues"> </a>
                 </ul>
             </nav>
            <h3>el modernismo</h3>
            </header>
         <h1>Eduardo Viana</h1>
-        <h2>Qui est t-il ?</h2>
+        <h2>Who is this artist?</h2>
         <p>Eduardo Afonso Viana né le 28 novembre 1881 à Lisbonne et mort le 21 février 1967 à Lisbonne est un peintre portugais. Il est passé maître dans l’art du modernisme.</p>
         <p>Eduardo Afonso Viana est le fils de José Afonso Viana et Maria das Dores Fonseca Viana Il étudie à l'Académie des beaux-arts de Lisbonne, il est l'étudiant de Veloso Salgado et Columbano Bordalo Pinheiro.En 1905 Il interrompt ses cours pour se rendre à Paris, afin d'étudier avec ean-Paul Laurens l'un des derniers exposants du style académique français.  A Paris, il est en relation avec Manuel Bentes et Manuel Jardim peintres et autres adeptes de Laurens. Il revient au Portugal entre 1915-1916, à cause de la première guerre mondiale et il vit à la Vila do Conde au nord du Portugal avec des amis peintres Sonia et Robert Delaunay. Sonia Delaunay met ce rapprochement à profit pour étudier le mouvement artistique de Viana.</p>
         <p>Dix ans plus tard, en 1925, il revient au Portugal. C'est à cette période que son développement artistique atteint son plus haut niveau comme le démontrent ses œuvres de nu et de paysages.</p>
@@ -44,20 +44,57 @@
         <p>Il est l’un des pionniers du modernisme portugais. Il a pour habitude de ne pas représenter fidèlement ce qu'il voit, il a plutôt tendance à dessiner des équivalents picturaux. </p>
         <p>En 1957, il remporte le Grand Prix de Peinture à la première exposition des arts plastiques de la Fondation Calouste Gulbenkian à Lisbonne. En 1965, il reçoit le prix national pour l'art. En 1919, il participe à l'exposition III des modernistes à Porto. En 1920, il tient sa première exposition personnelle encore à Porto à la Galerie Mercy, et une autre en 1921 celle-ci à Lisbonne. En 1923, il invite ses collègues Amadeo de Souza-Cardoso et  José Sobral de Almada Negreiros pour participer à l'exposition de la Société nationale indépendante des Beaux-Arts à Lisbonne. Il organise le premier Salon d'automne de la Société nationale des Beaux-Arts en 1925, où il expose huit œuvres majeures. En 1926, il participe au deuxième Salon d'Automne, à côté d’António Soares, José Tagarro et Carlos Botelho , entre autres. </p>
         <h2>Gallerie de l’artiste</h2>
+        <div class="carrousel" x-data="{ hrefCourant: '#ecran-1',}">
+
+            <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="hrefCourant = '#'+
+            [...$refs.parent.children] .find(e=>e.getBoundingClientRect().x>=0).id ">
+            <link rel='stylesheet' href='/src/css/components/carrousel.css'>
+             
+                <div id="ecran-1" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Article_E_V/EV_img1.webp" alt="image EV1">
+                    </figure>
+                </div>
+                <div id="ecran-2" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Article_E_V/EV_img2.webp" alt="image EV2">
+                    </figure>
+                </div>
+                <div id="ecran-3" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Article_E_V/EV_img3.webp" alt="image EV3">
+                    </figure>
+                </div>
+                <div id="ecran-4" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Article_E_V/EV_img4.webp" alt="image EV4">
+                    </figure>
+                </div>
+                <div id="ecran-5" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Article_E_V/EV_img5.webp" alt="image EV5">
+                    </figure>
+                </div>
+                <div id="ecran-6" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Article_E_V/EV_img6.webp" alt="image EV6">
+                    </figure>
+                </div>
+            </div>
         <h2>Zoom sur deux de ses oeuvres</h2>
         <img src="/public/img/Article_E_V/EV_oeuvres1.webp">
         <p>Pousada de Ciganos - 1923</p>
-        <a href="/Fr/Pousada_de_Ciganos.html"> en savoir plus</a>
+        <a href="/En/Pousada_de_Ciganos.html"> en savoir plus</a>
         <img src="/public/img/Article_E_V/EV_oeuvres2.webp">
         <p>Rapaz das louças - 1919</p>
-        <a href="/Fr/Rapaz_das_louças.html"> en savoir plus</a>
+        <a href="/En/Rapaz_das_louças.html"> en savoir plus</a>
      </body>
      <footer>
         <h4>el modernismo</h4>
-        <li><a href="Contact.html">Contact</a></li>
+        <li><a href="/En/Contact.html">Contact</a></li>
         <li><a href="#">Billetterie</a></li>
         <img src="/public/img/Icones/Mail.svg" alt="Icone mail">
-        <li><a href="#">elmodernismo@gmail.com</a></li>
+        <p>elmodernismo@gmail.com</p>
         <img src="/public/img/Icones/Adresse.svg" alt="Icone adresse">
         <p>Fondation Cartier, 261 Bd Raspail, 75014 Paris</p>>
      </footer>

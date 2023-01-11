@@ -5,51 +5,119 @@
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <title>el modernismo</title>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <link rel='stylesheet' type='text/css' media='screen' href='/src/css/main.css'>
+        <link rel='stylesheet' type='text/css' media='screen' href='/src/css/style.css'>
         <script defer src="https://unpkg.com/alpinejs"></script>
+        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
         <link rel="icon" href="public/img/Icones/Logo.svg">
     </head>
     <body>
         <header>
-            <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="menuBouton">
+            <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="menuBtn">
                 <img src="/public/img/Icones/Menu.svg" alt="Icone menu">
             </button>
-            <a href="/En/index.html"> <img src="/public/img/Icones/Langues.svg" alt="globe" class="header__nav--language"> </a>
-            <a href="index.html"> <img src="/public/img/Icones/Logo.svg" alt= "logo exposition" > </a>
+            <a href="/Fr/index.html"> <img src="/public/img/Icones/Langues.svg" alt="langues" class="header__nav--language"> </a>
+            <a href="/En/index.html"> <img src="/public/img/Icones/Logo.svg" alt= "logo exposition" > </a>
             <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.600ms class="menu">
                 <ul>
-                    <a href="#"> <img src="/public/img/Icones/Croix.svg" alt="Logo du site"> </a>
-                    <li><a href="index.html">Expostion sur le modernismo</a></li>
-                    <li><a href="modernismo.html">Le modernismo</a></li>
+                    <a href="/En/index.html"> <img src="/public/img/Icones/Croix.svg" alt="Croix"> </a>
+                    <li><a href="/En/index.html">Expostion sur le modernismo</a></li>
+                    <li><a href="/En/modernismo.html">Le modernismo</a></li>
                     <p>Artistes</p>
-                    <li><a href="Eduardo_Viana.html">Eduardo Viana</a></li>
-                    <li><a href="Georgina_de_Albuquerque.html">Georgina de Albuquerque</a></li>
-                    <li><a href="Joaquin_Torres_Garcia.html">Joaquín Torres García</a></li>
-                    <li><a href="Jose_Guadalupe_Posada.html">José Guadalupe Posada</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
-                    <li><a href="Tarifs_&_billetterie.html">Tarifs & billetterie</a></li>
-                    <a href="#"> <img src="/public/img/Icones/Langues_menu.svg" alt="Logo du site"> </a>
+                    <li><a href="/En/Eduardo_Viana.html">Eduardo Viana</a></li>
+                    <li><a href="/En/Georgina_de_Albuquerque.html">Georgina de Albuquerque</a></li>
+                    <li><a href="/En/Joaquin_Torres_Garcia.html">Joaquín Torres García</a></li>
+                    <li><a href="/En/Jose_Guadalupe_Posada.html">José Guadalupe Posada</a></li>
+                    <li><a href="/En/Contact.html">Contact</a></li>
+                    <li><a href="/En/Tarifs_&_billetterie.html">Tarifs & billetterie</a></li>
+                    <a href="/Fr/index.html"> <img src="/public/img/Icones/Langues.svg" alt="Langues"> </a>
                 </ul>
             </nav>
            <h3>el modernismo</h3>
-           </header>
+        </header>
         <h1>Expostion sur le modernismo</h1>
         <h2>Le modernismo</h2>
+        <div class="carrousel" x-data="{ hrefCourant: '#ecran-1',}">
+
+            <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="hrefCourant = '#'+
+            [...$refs.parent.children] .find(e=>e.getBoundingClientRect().x>=0).id ">
+            <link rel='stylesheet' href='/src/css/components/carrousel.css'>
+             
+                <div id="ecran-1" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Home_M/img_home1.webp" alt="image home 1">
+                    </figure>
+                </div>
+                <div id="ecran-2" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Home_M/img_home2.webp" alt="image home 2">
+                    </figure>
+                </div>
+                <div id="ecran-3" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Home_M/img_home3.webp" alt="image home 3">
+                    </figure>
+                </div>
+                <div id="ecran-4" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Home_M/img_home4.webp" alt="image home 4">
+                    </figure>
+                </div>
+                <div id="ecran-5" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Home_M/img_home5.webp" alt="image home 5">
+                    </figure>
+                </div>
+                <div id="ecran-6" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Home_M/img_home6.webp" alt="image home 6">
+                    </figure>
+                </div>
+                <div id="ecran-7" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Home_M/img_home7.webp" alt="image home 7">
+                    </figure>
+                </div>
+                <div id="ecran-8" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Home_M/img_home8.webp" alt="image home 8">
+                    </figure>
+                </div>
+                <div id="ecran-9" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Home_M/img_home9.webp" alt="image home 9">
+                    </figure>
+                </div>
+                <div id="ecran-10" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Home_M/img_home10.webp" alt="image home 10">
+                    </figure>
+                </div>
+                <div id="ecran-11" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Home_M/img_home11.webp" alt="image home 11">
+                    </figure>
+                </div>
+                <div id="ecran-12" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/Home_M/img_home12.webp" alt="image home 12">
+                    </figure>
+                </div>   
+            </div>
         <p>Le Modernismo est l’art nouveau espagnol. Il convient de remarquer qu'en espagnol le mot sert à désigner la totalité du mouvement de l'Art nouveau.</p>
         <p>Le modernismo se développa essentiellement au long d'une cinquantaine d'années, entre 1880 et 1930. C'est une tendance européenne, qui prend en Catalogne une personnalité différenciée...</p>
-        <a href="/Fr/modernismo.html"> en savoir plus</a>
+        <a href="/En/modernismo.html"> en savoir plus</a>
         <img src="/public/img/Home_M/EV.webp">
         <p>Eduardo Viana</p>
-        <a href="/Fr/Eduardo_Viana.html"> voir plus</a>
+        <a href="/En/Eduardo_Viana.html"> voir plus</a>
         <img src="/public/img/Home_M/GdA.webp">
         <p>Georgina de Albuquerque</p>
-        <a href="/Fr/Georgina_de_Albuquerque.html"> voir plus</a>
+        <a href="/En/Georgina_de_Albuquerque.html"> voir plus</a>
         <img src="/public/img/Home_M/JGP.webp">
         <p>José Guadalupe Posada</p>
-        <a href="/Fr/Jose_Guadalupe_Posada.html"> voir plus</a>
+        <a href="/En/Jose_Guadalupe_Posada.html"> voir plus</a>
         <img src="/public/img/Home_M/JTG.webp">
         <p>Joaquín Torres García</p>
-        <a href="/Fr/Joaquin_Torres_Garcia.html"> voir plus</a>
+        <a href="/En/Joaquin_Torres_Garcia.html"> voir plus</a>
         <h2>Venez donc découvrir le modernismo</h2>
         <p>Du 13 avril au 23 juin 2021, tous les jours de 11h à 20h, sauf le lundi. Nocturne le mardi, jusqu'à 22h. La fermeture des salles débute à 19h45 (21h45 les mardis). </p>
         <p>Venez découvrir les différents artistes du modernismo. Cette exposition el modernismo vous attends à la Fondation Cartier, 261 Bd Raspail, 75014 Paris.</p>
@@ -57,10 +125,10 @@
      </body>
      <footer>
         <h4>el modernismo</h4>
-        <li><a href="Contact.html">Contact</a></li>
+        <li><a href="/En/Contact.html">Contact</a></li>
         <li><a href="#">Billetterie</a></li>
         <img src="/public/img/Icones/Mail.svg" alt="Icone mail">
-        <li><a href="#">elmodernismo@gmail.com</a></li>
+        <p>elmodernismo@gmail.com</p>
         <img src="/public/img/Icones/Adresse.svg" alt="Icone adresse">
         <p>Fondation Cartier, 261 Bd Raspail, 75014 Paris</p>>
      </footer>
