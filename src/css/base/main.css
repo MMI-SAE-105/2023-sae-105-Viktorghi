@@ -14,18 +14,18 @@ h1{
 h2{
     font-family: 'Overpass';
     font-size: 20px;
-    color: var(--jaune-pale);
-}
-
-footer h3{
-    font-family: 'Carme';
-    font-size: 12px;
     color: var(--noir);
 }
 
-h4{
+header h3{
     font-family: 'Trirong';
     font-size: 24px;
+    color: var(---jaune-pale);
+}
+
+footer h4{
+    font-family: 'Carme';
+    font-size: 14px;
     color: var(---jaune-pale);
 }
 
