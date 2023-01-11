@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>el modernismo</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='/src/css/main.css'>
+        <script defer src="https://unpkg.com/alpinejs"></script>
+        <link rel="icon" href="public/img/Icones/Logo.svg">
+    </head>
+    <body>
+        <header>
+         <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="menuBtn">
+             <img src="/public/img/Icones/Menu.svg" alt="Icone menu">
+         </button>
+         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.600ms class="menu">
+             <ul>
+                <a href="#"> <img src="/public/img/Icones/Croix.svg" alt="Logo du site"> </a>
+                <li><a href="index.html">Expostion sur le modernismo</a></li>
+                <li><a href="modernismo.html">Le modernismo</a></li>
+                <p>Artistes</p>
+                <li><a href="Eduardo_Viana.html">Eduardo Viana</a></li>
+                <li><a href="Georgina_de_Albuquerque.html">Georgina de Albuquerque</a></li>
+                <li><a href="Joaquin_Torres_Garcia.html">Joaquín Torres García</a></li>
+                <li><a href="Jose_Guadalupe_Posada.html">José Guadalupe Posada</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Tarifs_&_billetterie.html">Tarifs & billetterie</a></li>
+                <a href="#"> <img src="/public/img/Icones/Langues_menu.svg" alt="Logo du site"> </a>
+             </ul>
+         </nav>
+         <a href="#"> <img src="/public/img/Icones/Logo.svg" alt="Logo du site"> </a>
+        <a href="#"> <img src="/public/img/Icones/Langues.svg" alt="Langues"> </a>
+        <h3>el modernismo</h3>
+        </header>
+        <h1>Costruzione Geometrica</h1>
+        <h2>Quelle est cette oeuvre ?</h2>
+        <img src="/public/img/Article_J_T_G/JTG_oeuvres1.webp">
+        <p>Costruzione Geometrica est une peinture à l'huile faite en 1929</p>
+        <p>Puisant dans les principes de l’abstraction pure des néoplasticiens, Torres-García conçoit à Paris, dans un style aisément reconnaissable, un monde constructif postulant un ordre de relations géométriques et tout un répertoire de pictogrammes. Ce qu’il va appeler son « universalisme construit » repose alors sur des compositions abstraites où sont combinés des signes inventés ou des schémas d’objets réels. L’abstraction ne signifie pas l’abandon de la figuration mais sa mise au carreau et à l’échelle ou son compartimentage. À partir de 1931, ses tableaux affichent une structure orthogonale dans laquelle s’insèrent des schèmes d’objets ou des images de la mémoire collective. Tels sont les effets d’une interprétation plastique de l’univers. Ainsi se répètent, d’une peinture à l’autre, des petits damiers enfermant dans chacune de leurs cases la forme d’une chose simple ou familière : un bateau à vapeur, une horloge, une bouteille, un marteau, une chaise, ou bien encore une silhouette, un poisson. Tous ces objets pullulent. Ils envahissent l’espace. Ils font monde. Ils jouent de leurs ressemblances et de leurs différences. Ils produisent d’étranges articulations. L’artiste peut alors moduler des formes analogues, objets ou figures humaines, qu’il griffe en quelque sorte dans l’urgence.</p>
+        <p>Si vous aimez cet artiste, vous pouvez aller consulter une autre de ses oeuvres.</p>
+     </body>>
+     <footer>
+        <h4>el modernismo</h4>
+        <li><a href="Contact.html">Contact</a></li>
+        <li><a href="#">Billetterie</a></li>
+        <img src="/public/img/Icones/Mail.svg" alt="Icone mail">
+        <li><a href="#">elmodernismo@gmail.com</a></li>
+        <img src="/public/img/Icones/Adresse.svg" alt="Icone adresse">
+        <p>Fondation Cartier, 261 Bd Raspail, 75014 Paris</p>>
+     </footer>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>el modernismo</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='/src/css/main.css'>
+        <script defer src="https://unpkg.com/alpinejs"></script>
+        <link rel="icon" href="public/img/Icones/Logo.svg">
+    </head>
+    <body>
+        <header>
+         <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="menuBtn">
+             <img src="/public/img/Icones/Menu.svg" alt="Icone menu">
+         </button>
+         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.600ms class="menu">
+             <ul>
+                <a href="#"> <img src="/public/img/Icones/Croix.svg" alt="Logo du site"> </a>
+                <li><a href="index.html">Expostion sur le modernismo</a></li>
+                <li><a href="modernismo.html">Le modernismo</a></li>
+                <p>Artistes</p>
+                <li><a href="Eduardo_Viana.html">Eduardo Viana</a></li>
+                <li><a href="Georgina_de_Albuquerque.html">Georgina de Albuquerque</a></li>
+                <li><a href="Joaquin_Torres_Garcia.html">Joaquín Torres García</a></li>
+                <li><a href="Jose_Guadalupe_Posada.html">José Guadalupe Posada</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Tarifs_&_billetterie.html">Tarifs & billetterie</a></li>
+                <a href="#"> <img src="/public/img/Icones/Langues_menu.svg" alt="Logo du site"> </a>
+             </ul>
+         </nav>
+        <a href="#"> <img src="/public/img/Icones/Logo.svg" alt="Logo du site"> </a>
+        <a href="#"> <img src="/public/img/Icones/Langues.svg" alt="Langues"> </a>
+        <h3>el modernismo</h3>
+        </header>
+        <h1>Rapaz das louças</h1>
+        <h2>Quelle est cette oeuvre ?</h2>
+        <img src="/public/img/Article_E_V/EV_oeuvres1.webp">
+        <p>Rapaz das louças est une peinture dans le style orphism faite en 1919</p>
+        <p>Vendu très tôt au Bristol-Clube (1919-1928, Lisbonne), une grande maison de jeu, un restaurant et un club où se réunissaient les célébrités de l'époque, ce tableau d'Eduardo Viana (1881-1967) a été vendu directement par le propriétaire du Clube à l'architecte Carlos Ramos. Elle n'a probablement jamais été repeinte, contrairement à d'autres tableaux du même auteur, et témoigne donc fidèlement de la capacité expressive du peintre en 1919.</p>
+        <p>Dans l'année qui suit immédiatement la guerre de 1914-18, dans toute l'Europe dévastée, tant sur le plan politique que culturel, on proclame la nécessité d'un retour à l'ordre, ce qui va à l'encontre du radicalisme de l'avant-garde artistique.</p>
+        <p>Dans l'environnement plus restreint du Portugal, le tableau apparaît comme le chef de file de la redécouverte du pré-cubiste français Paul Cézanne (1839-1906), qui marque la tendance constructiviste des années 1920, en compromis avec le goût naturaliste dominant. Eduardo Viana, diplômé de l'Académie des Beaux-Arts de Lisbonne, confronte en une seule image des pratiques picturales, à savoir le chromatisme tonal de Columbano (1857-1929) et le timbre de Robert Delaunay (1885-1941), montrant également que le modernisme n'est pas incompatible avec le goût populaire.</p>
+        <p>Si vous aimez cet artiste, vous pouvez aller consulter une autre de ses oeuvres.</p>
+     </body>>
+     <footer>
+        <h4>el modernismo</h4>
+        <li><a href="Contact.html">Contact</a></li>
+        <li><a href="#">Billetterie</a></li>
+        <img src="/public/img/Icones/Mail.svg" alt="Icone mail">
+        <li><a href="#">elmodernismo@gmail.com</a></li>
+        <img src="/public/img/Icones/Adresse.svg" alt="Icone adresse">
+        <p>Fondation Cartier, 261 Bd Raspail, 75014 Paris</p>>
+     </footer>
+</html>
