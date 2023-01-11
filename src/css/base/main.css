@@ -14,7 +14,7 @@ h1{
 h2{
     font-family: 'Overpass';
     font-size: 20px;
-    color: var(--jaune-pâle);
+    color: var(--jaune-pale);
 }
 
 footer h3{
@@ -26,7 +26,7 @@ footer h3{
 h4{
     font-family: 'Trirong';
     font-size: 24px;
-    color: var(---jaune-pâle);
+    color: var(---jaune-pale);
 }
 
 p {
