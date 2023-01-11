@@ -11,29 +11,33 @@
         <link rel="icon" href="public/img/Icones/Logo.svg">
     </head>
     <body>
-        <header>
-            <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="menuBtn">
-                <img src="/public/img/Icones/Menu.svg" alt="Icone menu">
-            </button>
-            <a href="/En/index.html"> <img src="/public/img/Icones/Langues.svg" alt="langues" class="header__nav--language"> </a>
-            <a href="/Fr/index.html"> <img src="/public/img/Icones/Logo.svg" alt= "logo exposition" > </a>
-            <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.600ms class="menu">
-                <ul>
-                    <a href="/Fr/index.html"> <img src="/public/img/Icones/Croix.svg" alt="Croix"> </a>
-                    <li><a href="Fr/index.html">Expostion sur le modernismo</a></li>
-                    <li><a href="/Fr/modernismo.html">Le modernismo</a></li>
-                    <p>Artistes</p>
-                    <li><a href="/Fr/Eduardo_Viana.html">Eduardo Viana</a></li>
-                    <li><a href="/Fr/Georgina_de_Albuquerque.html">Georgina de Albuquerque</a></li>
-                    <li><a href="/Fr/Joaquin_Torres_Garcia.html">Joaquín Torres García</a></li>
-                    <li><a href="/Fr/Jose_Guadalupe_Posada.html">José Guadalupe Posada</a></li>
-                    <li><a href="/Fr/Contact.html">Contact</a></li>
-                    <li><a href="/Fr/Tarifs_&_billetterie.html">Tarifs & billetterie</a></li>
-                    <a href="/En/index.html"> <img src="/public/img/Icones/Langues.svg" alt="Langues"> </a>
-                </ul>
-            </nav>
-           <h3>el modernismo</h3>
-        </header>
+        <div class="header">  
+            <div class="header__btn"> 
+                <header>
+                    <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__btn-menu">
+                        <img src="/public/img/Icones/Menu.svg" alt="Icone menu">
+                    </button>
+                    <a href="/En/index.html"> <img src="/public/img/Icones/Langues.svg" alt="langues" class="header__btn-langues"> </a>
+                    <a href="/Fr/index.html"> <img src="/public/img/Icones/Logo.svg" alt= "logo exposition" > </a>
+                    <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.600ms class="menu">
+                        <ul>
+                            <a href="/Fr/index.html"> <img src="/public/img/Icones/Croix.svg" alt="Croix"> </a>
+                            <li><a href="Fr/index.html">Expostion sur le modernismo</a></li>
+                            <li><a href="/Fr/modernismo.html">Le modernismo</a></li>
+                            <p>Artistes</p>
+                            <li><a href="/Fr/Eduardo_Viana.html">Eduardo Viana</a></li>
+                            <li><a href="/Fr/Georgina_de_Albuquerque.html">Georgina de Albuquerque</a></li>
+                            <li><a href="/Fr/Joaquin_Torres_Garcia.html">Joaquín Torres García</a></li>
+                            <li><a href="/Fr/Jose_Guadalupe_Posada.html">José Guadalupe Posada</a></li>
+                            <li><a href="/Fr/Contact.html">Contact</a></li>
+                            <li><a href="/Fr/Tarifs_&_billetterie.html">Tarifs & billetterie</a></li>
+                            <a href="/En/index.html"> <img src="/public/img/Icones/Langues.svg" alt="Langues"> </a>
+                        </ul>
+                    </nav>
+                <h3>el modernismo</h3>
+                </header>
+            </div>
+        </div>  
         <h1>Expostion sur le modernismo</h1>
         <h2>Le modernismo</h2>
         <div class="carrousel" x-data="{ hrefCourant: '#ecran-1',}">
